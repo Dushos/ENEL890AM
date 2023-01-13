@@ -1,0 +1,7 @@
+unsigned int abc;
+signed char* abc;
+unsigned int abc[10];
+unsigned char* abc[10];
+unsigned int (*abc)[10];
+boolean (abc)(float);
+volatile unsigned int abc;

@@ -1,0 +1,22 @@
+ int whatsit(unsigned n)
+ { // hint: recall from ense352 that argument n will be
+ // passed in R0.
+ int result = 0;
+ int i;
+ for (i = 0; i < 32; i++) {
+ result = ((result << 1) | (n & 1));
+ n = n >> 1;
+ }
+
+ //for (___________; _____________; ___________) {
+ // some stuff, may take a few lines of code
+ //__________________________________________;
+ //__________________________________________;
+ //__________________________________________;
+ 
+ return result;
+ }
+ 
+
+
+ // (b) The purpose of the function returns the result as the output when the code is run.
