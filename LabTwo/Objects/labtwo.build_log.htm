@@ -1,0 +1,164 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Usheoritse itsekiri, UoR, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\embedded\LabTwoRedone\labtwo.uvprojx
+Project File Date:  02/17/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling main.c...
+main.c(1): warning: In file included from...
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+main.c(12): warning: variable 'stop_time' set but not used [-Wunused-but-set-variable]
+  int16_t stop_time;
+          ^
+4 warnings generated.
+compiling timer.c...
+timer.c(1): warning: In file included from...
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+timer.c(39): warning: variable 'sin_x' set but not used [-Wunused-but-set-variable]
+  double x, sin_x, term;
+            ^
+timer.c(185): warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wimplicit-float-conversion]
+    angle_rad = angle_deg * pi / 180.0;
+              ~ ~~~~~~~~~~~~~~~^~~~~~~
+timer.c(84): warning: variable 'cos_value' set but not used [-Wunused-but-set-variable]
+  float angle_rad, sin_value, cos_value;
+                              ^
+timer.c(62): warning: variable 'stop_time' set but not used [-Wunused-but-set-variable]
+  int16_t stop_time;
+          ^
+timer.c(84): warning: variable 'sin_value' set but not used [-Wunused-but-set-variable]
+  float angle_rad, sin_value, cos_value;
+                   ^
+timer.c(70): warning: variable 'struct8_2' set but not used [-Wunused-but-set-variable]
+        struct struct8 struct8_1, struct8_2;
+                                  ^
+timer.c(75): warning: variable 'struct128_2' set but not used [-Wunused-but-set-variable]
+        struct struct128 struct128_1, struct128_2;
+                                      ^
+timer.c(80): warning: variable 'struct1024_2' set but not used [-Wunused-but-set-variable]
+        struct struct1024 struct1024_1, struct1024_2;
+                                        ^
+timer.c(177): warning: variable 'struct1024_1' may be uninitialized when used here [-Wconditional-uninitialized]
+    struct1024_2 = struct1024_1;
+                   ^~~~~~~~~~~~
+timer.c(80): note: variable 'struct1024_1' is declared here
+        struct struct1024 struct1024_1, struct1024_2;
+        ^
+timer.c(165): warning: variable 'struct128_1' may be uninitialized when used here [-Wconditional-uninitialized]
+    struct128_2 = struct128_1;
+                  ^~~~~~~~~~~
+timer.c(75): note: variable 'struct128_1' is declared here
+        struct struct128 struct128_1, struct128_2;
+        ^
+timer.c(154): warning: variable 'struct8_1' may be uninitialized when used here [-Wconditional-uninitialized]
+    struct8_2 = struct8_1;
+                ^~~~~~~~~
+timer.c(70): note: variable 'struct8_1' is declared here
+        struct struct8 struct8_1, struct8_2;
+        ^
+timer.c(209): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOA->CRL &= ~(        (1<<22) |       (1<<23) );
+                   ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+timer.c(202): warning: function 'External_Measurement' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+ void External_Measurement(void){
+                                ^
+16 warnings generated.
+compiling comm.c...
+comm.c(1): warning: ISO C requires a translation unit to contain at least one declaration [-Wempty-translation-unit]
+^
+1 warning generated.
+assembling startup_stm32f10x_md.s...
+compiling system_stm32f10x.c...
+RTE/Device/STM32F103RB/system_stm32f10x.c(64): warning: In file included from...
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+RTE/Device/STM32F103RB/system_stm32f10x.c(166): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+            ^
+RTE/Device/STM32F103RB/system_stm32f10x.c(166): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};
+    ^
+4 warnings generated.
+linking...
+Program Size: Code=8316 RO-data=300 RW-data=4 ZI-data=1864  
+".\Objects\labtwo.axf" - 0 Error(s), 25 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103RB
+  ./RTE/_Target_1
+  C:/Users/USER/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/USER/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
