@@ -1,20 +1,3 @@
-/**
-  ******************************************************************************
-
-  Timer2 Setup for Delay in STM32F103C8T6
-  Author:   ControllersTech
-  Updated:  26th FEB 2021
-
-  ******************************************************************************
-  Copyright (C) 2017 ControllersTech.com
-
-  This is a free software under the GNU license, you can redistribute it and/or modify it under the terms
-  of the GNU General Public License version 3 as published by the Free Software Foundation.
-  This software library is shared with public for educational purposes, without WARRANTY and Author is not liable for any damages caused directly
-  or indirectly by this software, read more about this on the GNU General Public License.
-
-  ******************************************************************************
-*/
 
 #include "Delay_F103.h"
 
@@ -29,15 +12,7 @@ void TIM2_Config (void)
 ************************************************/
 	
 	RCC->APB1ENR |= (1<<0); // enable clock for TIM2 
-/*	
-	TIM2->CR1 = 0;  				// reset all
-	TIM2->CR1 |= (0<<1); 		// UDIS=0; UEV Enabled. The Update event will generate
-	TIM2->CR1 |= (0<<4);  	// DIR=1; select UP COUNTER mode
-	TIM2->CR1 |= (0<<5);  	// CMS=0;  Edge-aligned mode, up or down count depends on DIR
-	TIM2->CR1 |= (0<<8);  	// CKD=0; No clock DIVISION
-	TIM2->CR1 |= (0<<7);  	// ARPE=0; ARR Auto Reload Disabled
-	TIM2->RCR |= 0;         // Repetition Counter 0
-*/	
+
 	TIM2->ARR = 0xffff-1;  	// ARR value
 	TIM2->PSC = 72-1;      	// Prescalar value
 	
