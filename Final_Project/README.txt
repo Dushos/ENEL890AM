@@ -10,4 +10,4 @@ Finally, the function vTaskStartScheduler is called to begin scheduling tasks. T
 
 To use this code, you will need to have an appropriate STM32F103 development board and a ball height control system connected to the PWM output. You will also need a terminal program to communicate with the microcontroller via UART. This code assumes that the terminal program is configured to use 115200 baud, 8 data bits, no parity, and 1 stop bit.
 
-Note that this code is provided as-is and may need to be modified for your specific application. It is recommended that you have a good understanding of C programming and microcontroller programming before attempting to use this code.
+Note The system was designed using board 5 and calibrated using Tube 2. Also this code is provided as-is and may need to be modified for your specific application. It is recommended that you have a good understanding of C programming and microcontroller programming before attempting to use this code.
