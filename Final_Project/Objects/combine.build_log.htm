@@ -1,0 +1,138 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Usheoritse Itsekiri, UoR, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Dushos_\Desktop\Lab5_Combine_Two -agaiN_FreeRtos\combine.uvprojx
+Project File Date:  04/17/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Rebuild target 'Target 1'
+compiling GPIO_CONFIG.c...
+C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(1296): warning:  #47-D: incompatible redefinition of macro "TIM4_BASE"  (declared at line 24 of "minimal_regs.h")
+  #define TIM4_BASE             (APB1PERIPH_BASE + 0x0800)
+C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(1324): warning:  #47-D: incompatible redefinition of macro "GPIOB_BASE"  (declared at line 17 of "minimal_regs.h")
+  #define GPIOB_BASE            (APB2PERIPH_BASE + 0x0C00)
+C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(1360): warning:  #47-D: incompatible redefinition of macro "RCC_BASE"  (declared at line 13 of "minimal_regs.h")
+  #define RCC_BASE              (AHBPERIPH_BASE + 0x1000)
+GPIO_CONFIG.c: 3 warnings, 0 errors
+compiling cli_math.c...
+compiling uart.c...
+minimal_regs.h(13): warning:  #47-D: incompatible redefinition of macro "RCC_BASE"  (declared at line 1360 of "C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h")
+  #define RCC_BASE              ( (uint32_t)0x40021000 )
+minimal_regs.h(17): warning:  #47-D: incompatible redefinition of macro "GPIOB_BASE"  (declared at line 1324 of "C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h")
+  #define GPIOB_BASE            ( (uint32_t)0x40010C00 )
+minimal_regs.h(24): warning:  #47-D: incompatible redefinition of macro "TIM4_BASE"  (declared at line 1296 of "C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h")
+  #define TIM4_BASE             ( (uint32_t)0x40000800 )
+uart.c: 3 warnings, 0 errors
+compiling init_timer.c...
+C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(1296): warning:  #47-D: incompatible redefinition of macro "TIM4_BASE"  (declared at line 24 of "minimal_regs.h")
+  #define TIM4_BASE             (APB1PERIPH_BASE + 0x0800)
+C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(1324): warning:  #47-D: incompatible redefinition of macro "GPIOB_BASE"  (declared at line 17 of "minimal_regs.h")
+  #define GPIOB_BASE            (APB2PERIPH_BASE + 0x0C00)
+C:\Users\Dushos_\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h(1360): warning:  #47-D: incompatible redefinition of macro "RCC_BASE"  (declared at line 13 of "minimal_regs.h")
+  #define RCC_BASE              (AHBPERIPH_BASE + 0x1000)
+init_timer.c: 3 warnings, 0 errors
+compiling Delay_F103.c...
+compiling adc_config.c...
+compiling combine.c...
+assembling startup_stm32f10x_md.s...
+compiling freertos_evr.c...
+compiling list.c...
+compiling heap_1.c...
+compiling system_stm32f10x.c...
+compiling timers.c...
+compiling port.c...
+compiling Prog_Task.c...
+compiling queue.c...
+compiling tasks.c...
+linking...
+Program Size: Code=12228 RO-data=744 RW-data=156 ZI-data=5972  
+".\Objects\combine.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.5.1.pack
+                ARM.CMSIS-FreeRTOS.10.5.1
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 10.5.1
+   * Component: Core Variant: Cortex-M Version: 10.5.1
+   * Component: Heap Variant: Heap_1 Version: 10.5.1
+   * Component: Timers Version: 10.5.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103RB
+  ./RTE/RTOS
+  ./RTE/_Target_1
+  C:/Users/Dushos_/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/CMSIS/RTOS2/FreeRTOS/Include
+  C:/Users/Dushos_/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/include
+  C:/Users/Dushos_/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/RVDS/ARM_CM3
+  C:/Users/Dushos_/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Dushos_/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM.FreeRTOS::RTOS:Config:FreeRTOS:10.5.1
+      Include file:  Config/ARMCM/FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.5.1
+      Include file:  Source/include/task.h
+      Include file:  Source/include/FreeRTOS.h
+      Include file:  Source/include/semphr.h
+      Source file:   Source/queue.c
+      Source file:   Source/tasks.c
+      Include file:  Source/include/queue.h
+      Source file:   Source/list.c
+      Source file:   Source/portable/RVDS/ARM_CM3/port.c
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.5.1
+      Source file:   Source/portable/MemMang/heap_1.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.5.1
+      Source file:   Source/timers.c
+      Include file:  Source/include/timers.h
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/system_stm32f10x.c
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
